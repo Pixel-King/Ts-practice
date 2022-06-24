@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container py-5">
+        <h2>Add stuff</h2>
+        <form class="mb-5" id="form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Price</label>
+                <input class="form-control" id="price" required>
+               
+            </div> 
+            <button class="btn btn-primary" type="submit">Add</button>
+        </form>
+        
+        <h2>All stuff</h2>
+        <table class="table">
+            <thead>
+                <tr> 
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+    </div>  
+    
+    <script src="index.js"></script>
+</body>
+</html>
